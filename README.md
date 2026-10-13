@@ -21,3 +21,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 16: eccezioni e strategia degli errori](./16-eccezioni/)
 - [Lezione 18: collezioni, List, Set, Map e sequenced collections](./18-collezioni/)
 - [Lezione 19: generics](./19-generics/)
+- [Lezione 20: lambda e interfacce funzionali](./20-lambda/)
