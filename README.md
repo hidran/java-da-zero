@@ -8,3 +8,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 3: variabili, tipi e var](./03-variabili-tipi-e-var/)
 - [Lezione 4: operatori ed espressioni](./04-operatori-ed-espressioni/)
 - [Lezione 5: condizioni, if e switch come espressione](./05-condizioni-if-e-switch/)
+- [Lezione 6: cicli](./06-cicli/)
