@@ -15,3 +15,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 10: incapsulamento e costruttori](./10-incapsulamento-e-costruttori/)
 - [Lezione 11: record, dati immutabili](./11-record-dati-immutabili/)
 - [Lezione 12: composizione prima dell'ereditarietà](./12-composizione-ereditarieta/)
+- [Lezione 13: interfacce e polimorfismo](./13-interfacce-e-polimorfismo/)
