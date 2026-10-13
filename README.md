@@ -11,3 +11,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 6: cicli](./06-cicli/)
 - [Lezione 7: metodi e riuso del codice](./07-metodi-e-riuso/)
 - [Lezione 8: array, String e text block](./08-array-string-text-block/)
+- [Lezione 9: classi e oggetti](./09-classi-e-oggetti/)
