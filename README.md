@@ -18,3 +18,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 13: interfacce e polimorfismo](./13-interfacce-e-polimorfismo/)
 - [Lezione 14: enum e tipi sealed](./14-enum-e-tipi-sealed/)
 - [Lezione 15: pattern matching con instanceof, switch e record pattern](./15-pattern-matching/)
+- [Lezione 16: eccezioni e strategia degli errori](./16-eccezioni/)
