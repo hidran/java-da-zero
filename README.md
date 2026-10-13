@@ -13,3 +13,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 8: array, String e text block](./08-array-string-text-block/)
 - [Lezione 9: classi e oggetti](./09-classi-e-oggetti/)
 - [Lezione 10: incapsulamento e costruttori](./10-incapsulamento-e-costruttori/)
+- [Lezione 11: record, dati immutabili](./11-record-dati-immutabili/)
