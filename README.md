@@ -27,3 +27,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 23: date e orari con java.time](./23-date-e-orari/)
 - [Lezione 24: file e I/O con java.nio.file](./24-file-e-io/)
 - [Lezione 25: concorrenza con thread, executor e CompletableFuture](./25-concorrenza/)
+- [Lezione 26: thread virtuali e scoped values](./26-thread-virtuali-scoped-values/)
