@@ -32,3 +32,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 30: S, una sola responsabilità](./30-srp-responsabilita-singola/)
 - [Lezione 31: O, aperto all'estensione, chiuso alla modifica](./31-ocp-aperto-chiuso/)
 - [Lezione 32: L, sostituibilità di Liskov](./32-lsp-liskov/)
+- [Lezione 33: I, interfacce piccole e mirate](./33-isp-interfacce-piccole/)
