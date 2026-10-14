@@ -26,3 +26,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 22: Optional e assenza di valore](./22-optional/)
 - [Lezione 23: date e orari con java.time](./23-date-e-orari/)
 - [Lezione 24: file e I/O con java.nio.file](./24-file-e-io/)
+- [Lezione 25: concorrenza con thread, executor e CompletableFuture](./25-concorrenza/)
