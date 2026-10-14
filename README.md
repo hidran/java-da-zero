@@ -30,3 +30,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 26: thread virtuali e scoped values](./26-thread-virtuali-scoped-values/)
 - [Lezione 29: KISS e DRY con un refactoring reale](./29-kiss-e-dry/)
 - [Lezione 30: S, una sola responsabilità](./30-srp-responsabilita-singola/)
+- [Lezione 31: O, aperto all'estensione, chiuso alla modifica](./31-ocp-aperto-chiuso/)
