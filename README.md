@@ -24,3 +24,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 20: lambda e interfacce funzionali](./20-lambda/)
 - [Lezione 21: stream e Gatherers](./21-stream-e-gatherers/)
 - [Lezione 22: Optional e assenza di valore](./22-optional/)
+- [Lezione 23: date e orari con java.time](./23-date-e-orari/)
