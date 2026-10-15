@@ -43,3 +43,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 28: Maven, dipendenze, build e ciclo di vita](./28-maven-build/)
 - [Lezione 27: test con JUnit 6 e AssertJ](./27-test-junit-assertj/)
 - [Lezione 36: architettura a strati ed esagonale](./36-architettura-a-strati-ed-esagonale/)
+- [Lezione 37: il dominio dello Shop](./37-dominio-shop/)
