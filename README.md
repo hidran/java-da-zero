@@ -38,3 +38,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 10b: membri statici](./10b-membri-statici/)
 - [Lezione 10c: overloading di metodi e costruttori](./10c-overloading/)
 - [Lezione 12b: la classe Object, toString, equals e hashCode](./12b-classe-object/)
+- [Lezione 13b: classi astratte, metodi default e static](./13b-classi-astratte/)
