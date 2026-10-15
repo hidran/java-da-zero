@@ -37,3 +37,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 35: pattern essenziali, Strategy, Factory e Builder](./35-pattern-strategy-factory-builder/)
 - [Lezione 10b: membri statici](./10b-membri-statici/)
 - [Lezione 10c: overloading di metodi e costruttori](./10c-overloading/)
+- [Lezione 12b: la classe Object, toString, equals e hashCode](./12b-classe-object/)
