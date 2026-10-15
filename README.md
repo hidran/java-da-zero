@@ -48,3 +48,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 39: bean e configurazione Java](./39-bean-e-configurazione-java/)
 - [Lezione 40: scansione dei componenti e stereotipi](./40-component-scan-e-stereotipi/)
 - [Lezione 42: scope e ciclo di vita dei bean](./42-scope-e-ciclo-di-vita/)
+- [Lezione 41: iniezione dal costruttore, Qualifier e Primary](./41-qualifier-e-primary/)
