@@ -47,3 +47,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 38: Spring e l'inversione del controllo](./38-spring-e-inversione-del-controllo/)
 - [Lezione 39: bean e configurazione Java](./39-bean-e-configurazione-java/)
 - [Lezione 40: scansione dei componenti e stereotipi](./40-component-scan-e-stereotipi/)
+- [Lezione 42: scope e ciclo di vita dei bean](./42-scope-e-ciclo-di-vita/)
