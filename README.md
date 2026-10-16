@@ -58,3 +58,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 51: test in Spring Boot](./51-test-in-spring-boot/)
 - [Lezione 44: eventi applicativi](./44-eventi-applicativi/)
 - [Lezione 45: testare il container e i bean](./45-test-del-container/)
+
+- [Lezione 52: Spring MVC e il percorso di una richiesta](./52-spring-mvc-e-controller/)

@@ -1,0 +1,43 @@
+package com.shop;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.test.web.servlet.MockMvc;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
+@WebMvcTest(ShippingController.class)
+class ShippingControllerTests {
+    @Autowired MockMvc mvc;
+    @MockitoBean ShippingService shipping;
+
+    @Test
+    void bindsParameterAndDelegates() throws Exception {
+        when(shipping.fee(2000)).thenReturn(490);
+        mvc.perform(get("/api/shipping").param("subtotalInCents", "2000"))
+                .andExpect(status().isOk()).andExpect(content().string("490"));
+        verify(shipping).fee(2000);
+    }
+
+    @Test
+    void rejectsMissingParameter() throws Exception {
+        mvc.perform(get("/api/shipping")).andExpect(status().isBadRequest());
+        verifyNoInteractions(shipping);
+    }
+
+    @Test
+    void rejectsInvalidNumber() throws Exception {
+        mvc.perform(get("/api/shipping").param("subtotalInCents", "text"))
+                .andExpect(status().isBadRequest());
+        verifyNoInteractions(shipping);
+    }
+
+    @Test
+    void rejectsPost() throws Exception {
+        mvc.perform(post("/api/shipping")).andExpect(status().isMethodNotAllowed());
+        verifyNoInteractions(shipping);
+    }
+}
