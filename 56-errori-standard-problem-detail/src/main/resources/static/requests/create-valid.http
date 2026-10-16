@@ -1,0 +1,6 @@
+### Valid product
+POST http://127.0.0.1:18086/api/products
+Accept: application/json
+Content-Type: application/json
+
+{"name":"Mouse","priceInCents":2500}
