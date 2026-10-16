@@ -51,3 +51,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 41: iniezione dal costruttore, Qualifier e Primary](./41-qualifier-e-primary/)
 - [Lezione 43: configurazione esterna e profili](./43-configurazione-esterna-e-profili/)
 - [Lezione 46: creare Shop con Spring Initializr](./46-spring-initializr/)
+- [Lezione 47: starter e autoconfigurazione](./47-starter-e-autoconfigurazione/)
