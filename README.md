@@ -62,3 +62,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 52: Spring MVC e il percorso di una richiesta](./52-spring-mvc-e-controller/)
 
 - [Lezione 53: progettare risorse e risposte REST](./53-progettare-api-rest/)
+
+- [Lezione 54: DTO con record e Jackson 3](./54-dto-record-e-jackson/)
