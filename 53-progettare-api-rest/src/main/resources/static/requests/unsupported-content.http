@@ -1,0 +1,6 @@
+### Unsupported content
+POST http://127.0.0.1:18083/api/products
+Accept: application/json
+Content-Type: text/plain
+
+Mouse
