@@ -56,3 +56,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 49: logging strutturato](./49-logging-strutturato/)
 - [Lezione 50: DevTools e primo sguardo ad Actuator](./50-devtools-e-actuator/)
 - [Lezione 51: test in Spring Boot](./51-test-in-spring-boot/)
+- [Lezione 44: eventi applicativi](./44-eventi-applicativi/)
