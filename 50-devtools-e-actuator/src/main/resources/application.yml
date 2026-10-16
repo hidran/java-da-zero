@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 18081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+  info:
+    env:
+      enabled: true
+info:
+  app:
+    name: shop
+    mode: training

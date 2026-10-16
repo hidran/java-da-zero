@@ -54,3 +54,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 47: starter e autoconfigurazione](./47-starter-e-autoconfigurazione/)
 - [Lezione 48: configurazione esterna e profili](./48-configurazione-12-factor/)
 - [Lezione 49: logging strutturato](./49-logging-strutturato/)
+- [Lezione 50: DevTools e primo sguardo ad Actuator](./50-devtools-e-actuator/)
