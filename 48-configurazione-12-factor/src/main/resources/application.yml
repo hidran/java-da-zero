@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: shop
+shop:
+  currency: EUR
+  shipping-in-cents: ${SHOP_SHIPPING:490}
