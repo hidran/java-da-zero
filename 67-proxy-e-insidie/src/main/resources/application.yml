@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 18097
+logging:
+  pattern:
+    console: "%-5level %logger{0} : %msg%n"

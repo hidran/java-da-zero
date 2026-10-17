@@ -86,3 +86,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 65: Il primo aspetto, log e tempi di esecuzione](./65-primo-aspetto-around/)
 
 - [Lezione 66: Pointcut e annotazioni personalizzate](./66-pointcut-e-annotazioni/)
+
+- [Lezione 67: Proxy e insidie](./67-proxy-e-insidie/)
