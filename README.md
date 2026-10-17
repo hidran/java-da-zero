@@ -88,3 +88,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 66: Pointcut e annotazioni personalizzate](./66-pointcut-e-annotazioni/)
 
 - [Lezione 67: Proxy e insidie](./67-proxy-e-insidie/)
+
+- [Lezione 68: Quando non usare l'AOP](./68-quando-non-usare-aop/)
