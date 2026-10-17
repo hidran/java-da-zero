@@ -66,3 +66,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 54: DTO con record e Jackson 3](./54-dto-record-e-jackson/)
 
 - [Lezione 56: Errori standard con ProblemDetail](./56-errori-standard-problem-detail/)
+
+- [Lezione 57: Service layer e repository in memoria](./57-service-e-repository-in-memoria/)
