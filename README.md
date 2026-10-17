@@ -78,3 +78,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 61: RestClient e HTTP interface](./61-restclient-e-http-interface/)
 
 - [Lezione 62: Testare i controller con MockMvc](./62-test-controller-con-mockmvc/)
+
+- [Lezione 63: Pagine server con Thymeleaf](./63-pagine-server-con-thymeleaf/)
