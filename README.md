@@ -80,3 +80,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 62: Testare i controller con MockMvc](./62-test-controller-con-mockmvc/)
 
 - [Lezione 63: Pagine server con Thymeleaf](./63-pagine-server-con-thymeleaf/)
+
+- [Lezione 64: AOP, i concetti](./64-aop-concetti/)
