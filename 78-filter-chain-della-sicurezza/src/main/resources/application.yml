@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: shop
+  security:
+    user:
+      # Demo user for the course: the password alice-demo is stored only as a BCrypt hash
+      name: alice
+      password: "{bcrypt}$2a$10$YZBK.GYMthlDx9tf0GMnxOd9MBVpx8dsg0EKXSk3FkWYnLG8yd0Re"
+      roles: USER
+server:
+  address: 127.0.0.1
+  port: 18108
+logging:
+  level:
+    org.springframework.security: DEBUG

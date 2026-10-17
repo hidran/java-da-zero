@@ -110,3 +110,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 77: Auditing e optimistic locking](./77-auditing-e-optimistic-locking/)
 
 - [Lezione 74: Migrazioni con Flyway](./74-migrazioni-con-flyway/)
+
+- [Lezione 78: Autenticazione e autorizzazione, la catena dei filtri](./78-filter-chain-della-sicurezza/)
