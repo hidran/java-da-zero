@@ -92,3 +92,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 68: Quando non usare l'AOP](./68-quando-non-usare-aop/)
 
 - [Lezione 55: Validation con Bean Validation](./55-validation-with-bean-validation/)
+
+- [Lezione 69: Da JDBC a JPA](./69-da-jdbc-a-jpa/)
