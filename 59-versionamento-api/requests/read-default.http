@@ -1,0 +1,3 @@
+### Product without a version
+GET http://127.0.0.1:18089/api/products/1
+Accept: application/json

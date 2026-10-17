@@ -1,0 +1,4 @@
+### Product, version 3
+GET http://127.0.0.1:18089/api/products/1
+Accept: application/json
+API-Version: 3.0
