@@ -1,0 +1,6 @@
+### Missing product name
+POST http://127.0.0.1:18085/api/products
+Accept: application/json
+Content-Type: application/json
+
+{"priceInCents":2500}
