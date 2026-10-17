@@ -84,3 +84,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 64: AOP, i concetti](./64-aop-concetti/)
 
 - [Lezione 65: Il primo aspetto, log e tempi di esecuzione](./65-primo-aspetto-around/)
+
+- [Lezione 66: Pointcut e annotazioni personalizzate](./66-pointcut-e-annotazioni/)
