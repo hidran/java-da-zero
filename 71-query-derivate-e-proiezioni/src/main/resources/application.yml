@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: shop
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: false

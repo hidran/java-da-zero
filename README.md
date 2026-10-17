@@ -96,3 +96,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 69: Da JDBC a JPA](./69-da-jdbc-a-jpa/)
 
 - [Lezione 70: Entità e repository JPA](./70-entita-e-repository-crud/)
+
+- [Lezione 71: Query derivate, @Query e proiezioni](./71-query-derivate-e-proiezioni/)
