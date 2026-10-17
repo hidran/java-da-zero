@@ -68,3 +68,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 56: Errori standard con ProblemDetail](./56-errori-standard-problem-detail/)
 
 - [Lezione 57: Service layer e repository in memoria](./57-service-e-repository-in-memoria/)
+
+- [Lezione 58: Paginazione, ordinamento e filtri](./58-paginazione-ordinamento-filtri/)
