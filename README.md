@@ -104,3 +104,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 73: Transazioni con @Transactional](./73-transazioni/)
 
 - [Lezione 75: PostgreSQL con Docker Compose](./75-postgresql-con-docker-compose/)
+
+- [Lezione 76: Test di persistenza con Testcontainers](./76-test-con-testcontainers/)
