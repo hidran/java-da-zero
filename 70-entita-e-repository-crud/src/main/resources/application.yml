@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: shop
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: false
+server:
+  address: 127.0.0.1
+  port: 18100
