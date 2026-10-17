@@ -1,0 +1,6 @@
+### Update the keyboard again with the old version
+PUT http://127.0.0.1:18107/api/products/1
+Accept: application/json
+Content-Type: application/json
+
+{"name":"Keyboard","priceInCents":4500,"version":0}
