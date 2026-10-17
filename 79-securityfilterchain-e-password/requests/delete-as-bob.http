@@ -1,0 +1,4 @@
+### Delete a product as bob (demo user, password bob-demo, role ADMIN)
+DELETE http://127.0.0.1:18109/api/products/2
+Accept: application/json
+Authorization: Basic Ym9iOmJvYi1kZW1v

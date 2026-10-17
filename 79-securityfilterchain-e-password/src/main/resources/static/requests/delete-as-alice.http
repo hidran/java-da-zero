@@ -1,0 +1,4 @@
+### Delete a product as alice (role USER)
+DELETE http://127.0.0.1:18109/api/products/2
+Accept: application/json
+Authorization: Basic YWxpY2U6YWxpY2UtZGVtbw==

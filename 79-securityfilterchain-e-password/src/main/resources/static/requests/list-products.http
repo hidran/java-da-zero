@@ -1,0 +1,3 @@
+### List the catalog without credentials
+GET http://127.0.0.1:18109/api/products
+Accept: application/json
