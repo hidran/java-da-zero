@@ -1,0 +1,14 @@
+INSERT INTO product (name, price_in_cents) VALUES ('Keyboard', 4900);
+INSERT INTO product (name, price_in_cents) VALUES ('Mouse', 2500);
+INSERT INTO product (name, price_in_cents) VALUES ('Monitor', 18900);
+INSERT INTO product (name, price_in_cents) VALUES ('Webcam', 3900);
+INSERT INTO product (name, price_in_cents) VALUES ('Laptop', 129900);
+INSERT INTO orders (status) VALUES ('NEW');
+INSERT INTO orders (status) VALUES ('PAID');
+INSERT INTO orders (status) VALUES ('SHIPPED');
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (1, 1, 1);
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (1, 2, 2);
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (2, 3, 1);
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (2, 4, 1);
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (3, 5, 1);
+INSERT INTO order_line (order_id, product_id, quantity) VALUES (3, 2, 1);

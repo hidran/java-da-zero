@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: shop
+  jpa:
+    defer-datasource-initialization: true
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
