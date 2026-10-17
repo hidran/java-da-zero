@@ -108,3 +108,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 76: Test di persistenza con Testcontainers](./76-test-con-testcontainers/)
 
 - [Lezione 77: Auditing e optimistic locking](./77-auditing-e-optimistic-locking/)
+
+- [Lezione 74: Migrazioni con Flyway](./74-migrazioni-con-flyway/)
