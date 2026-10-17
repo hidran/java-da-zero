@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: shop
+springdoc:
+  default-produces-media-type: application/json
+server:
+  address: 127.0.0.1
+  port: 18090
