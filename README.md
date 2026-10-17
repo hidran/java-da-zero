@@ -102,3 +102,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 72: Relazioni e problema N+1](./72-relazioni-e-problema-n-piu-1/)
 
 - [Lezione 73: Transazioni con @Transactional](./73-transazioni/)
+
+- [Lezione 75: PostgreSQL con Docker Compose](./75-postgresql-con-docker-compose/)
