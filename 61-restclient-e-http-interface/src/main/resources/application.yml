@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: shop
+  http:
+    serviceclient:
+      supplier:
+        base-url: http://127.0.0.1:18091
+server:
+  address: 127.0.0.1
+  port: 18091

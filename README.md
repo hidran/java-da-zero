@@ -74,3 +74,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 59: Versionamento delle API](./59-versionamento-api/)
 
 - [Lezione 60: Documentare con OpenAPI](./60-documentare-con-openapi/)
+
+- [Lezione 61: RestClient e HTTP interface](./61-restclient-e-http-interface/)
