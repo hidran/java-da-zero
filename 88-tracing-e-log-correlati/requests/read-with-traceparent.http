@@ -1,0 +1,4 @@
+### Read product inside an existing trace
+GET http://127.0.0.1:18118/api/products/2
+Accept: application/json
+traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01

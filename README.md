@@ -128,3 +128,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 81: API stateless con JWT](./81-api-stateless-con-jwt/)
 
 - [Lezione 82: OAuth2 e OpenID Connect con Keycloak](./82-oauth2-oidc-keycloak/)
+
+- [Lezione 88: Tracing e log correlati](./88-tracing-e-log-correlati/)

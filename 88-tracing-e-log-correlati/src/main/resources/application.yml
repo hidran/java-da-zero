@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 18118
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  otlp:
+    metrics:
+      export:
+        enabled: false
