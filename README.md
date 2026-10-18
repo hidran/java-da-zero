@@ -136,3 +136,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 91: Job schedulati e task asincroni](./91-job-schedulati-e-async/)
 
 - [Lezione 92: Qualità del codice nel build](./92-qualita-del-codice/)
+
+- [Lezione 87: Metriche e health check](./87-metriche-e-health-check/)

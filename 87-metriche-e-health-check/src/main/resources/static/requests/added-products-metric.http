@@ -1,0 +1,3 @@
+### Added products metric
+GET http://127.0.0.1:18117/actuator/metrics/shop.products.added
+Accept: application/json

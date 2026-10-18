@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 18117
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+  endpoint:
+    health:
+      show-components: always
+      group:
+        readiness:
+          include: readinessState,catalog
+          show-details: always
