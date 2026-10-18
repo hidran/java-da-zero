@@ -174,3 +174,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 107: Coerenza distribuita con le saghe](./107-saga/)
 
 - [Lezione 109: Pipeline CI con GitHub Actions](./109-pipeline-ci-github-actions/)
+
+- [Lezione 110: Immagine nativa con GraalVM (facoltativa)](./110-native-image-graalvm/)
