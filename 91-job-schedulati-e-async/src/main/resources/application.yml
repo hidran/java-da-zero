@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop
+  threads:
+    virtual:
+      enabled: true
+server:
+  address: 127.0.0.1
+  port: 18121
+shop:
+  jobs:
+    stock-check-delay: 5s
+    cleanup-cron: "0 0 2 * * *"

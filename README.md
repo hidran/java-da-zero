@@ -132,3 +132,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 88: Tracing e log correlati](./88-tracing-e-log-correlati/)
 
 - [Lezione 90: Resilienza: timeout, retry, circuit breaker](./90-resilienza/)
+
+- [Lezione 91: Job schedulati e task asincroni](./91-job-schedulati-e-async/)
