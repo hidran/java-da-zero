@@ -1,0 +1,12 @@
+# Shared by every service
+logging:
+  level:
+    root: warn
+    com.shop: info
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:21055/eureka/

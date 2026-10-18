@@ -1,0 +1,24 @@
+server:
+  address: 127.0.0.1
+  port: 21055
+spring:
+  application:
+    name: discovery-server
+  main:
+    banner-mode: off
+eureka:
+  instance:
+    hostname: 127.0.0.1
+    ip-address: 127.0.0.1
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:21055/eureka/
+  server:
+    use-read-only-response-cache: false
+logging:
+  level:
+    root: warn
+    com.shop: info
+    com.netflix.eureka.cluster: error

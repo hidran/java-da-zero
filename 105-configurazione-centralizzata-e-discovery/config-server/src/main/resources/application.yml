@@ -1,0 +1,19 @@
+server:
+  address: 127.0.0.1
+  port: 21054
+spring:
+  application:
+    name: config-server
+  main:
+    banner-mode: off
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:./config-repo
+logging:
+  level:
+    root: warn
+    com.shop: info

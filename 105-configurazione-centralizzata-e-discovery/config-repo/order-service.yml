@@ -1,0 +1,8 @@
+# Only for order-service
+spring:
+  http:
+    serviceclient:
+      catalog:
+        base-url: lb://catalog-service
+        connect-timeout: 1s
+        read-timeout: 2s

@@ -1,0 +1,6 @@
+### Order: the catalog is found by name
+POST http://127.0.0.1:21051/api/orders
+Accept: application/json
+Content-Type: application/json
+
+{"productId":1,"quantity":2}

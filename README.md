@@ -160,3 +160,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 101: Comunicazione sincrona resiliente](./101-comunicazione-sincrona-resiliente/)
 
 - [Lezione 104: API Gateway con Spring Cloud Gateway](./104-api-gateway/)
+
+- [Lezione 105: Configurazione centralizzata e service discovery](./105-configurazione-centralizzata-e-discovery/)
