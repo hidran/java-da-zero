@@ -138,3 +138,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 92: Qualità del codice nel build](./92-qualita-del-codice/)
 
 - [Lezione 87: Metriche e health check](./87-metriche-e-health-check/)
+
+- [Lezione 94: Dockerfile multi stage per Spring Boot](./94-dockerfile-multi-stage/)
