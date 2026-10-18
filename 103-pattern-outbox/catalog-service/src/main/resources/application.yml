@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: catalog-service
+server:
+  address: 127.0.0.1
+  port: 21030

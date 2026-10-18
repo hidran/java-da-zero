@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: order-service
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21030
+        connect-timeout: 500ms
+        read-timeout: 1s
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      properties:
+        max.block.ms: 2000
+        request.timeout.ms: 2000
+        delivery.timeout.ms: 3000
+outbox:
+  relay:
+    delay: 1s
+server:
+  address: 127.0.0.1
+  port: 21031
+logging:
+  level:
+    org.apache.kafka: error
+    org.springframework.kafka.support.LoggingProducerListener: off
