@@ -148,3 +148,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 97: Docker Compose, lo stack completo](./97-docker-compose-stack/)
 
 - [Lezione 98: Healthcheck, configurazione e segreti](./98-healthcheck-config-e-segreti/)
+
+- [Lezione 89: Caching con Spring Cache e Caffeine](./89-caching/)
