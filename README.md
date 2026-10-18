@@ -185,3 +185,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 
 - [Lezione 8b: debug con IntelliJ](./08b-debug-con-intellij/)
 - [Lezione 110b: Deploy in cloud (facoltativa)](./110b-deploy-in-cloud/)
+- [Lezione 24b: cartelle e percorsi](./24b-cartelle-e-percorsi/)
