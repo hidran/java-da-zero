@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: shop
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/shop
+    username: shop
+  jpa:
+    open-in-view: false
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+server:
+  address: 127.0.0.1
+  port: 18128

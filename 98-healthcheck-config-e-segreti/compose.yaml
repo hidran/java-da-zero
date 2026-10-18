@@ -1,0 +1,36 @@
+services:
+  app:
+    build: .
+    image: shop:config
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/shop
+      SPRING_DATASOURCE_USERNAME: shop
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in .env}
+      MANAGEMENT_ENDPOINT_HEALTH_SHOW_DETAILS: ${HEALTH_DETAILS:-never}
+    healthcheck:
+      test: ["CMD", "java", "-cp", "shop-0.0.1-SNAPSHOT.jar", "com.shop.HealthCheck"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      start_interval: 2s
+      retries: 3
+    ports:
+      - "127.0.0.1:18128:8080"
+  db:
+    image: postgres:18.6-alpine3.24
+    environment:
+      POSTGRES_DB: shop
+      POSTGRES_USER: shop
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD in .env}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "shop", "-d", "shop"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - shop-data:/var/lib/postgresql
+volumes:
+  shop-data:
