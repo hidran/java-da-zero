@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order-service
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21010
+        connect-timeout: 500ms
+        read-timeout: 1s
+server:
+  address: 127.0.0.1
+  port: 21011
