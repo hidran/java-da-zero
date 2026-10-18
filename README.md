@@ -158,3 +158,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 100: Dividere Shop: i bounded context](./100-bounded-context/)
 
 - [Lezione 101: Comunicazione sincrona resiliente](./101-comunicazione-sincrona-resiliente/)
+
+- [Lezione 104: API Gateway con Spring Cloud Gateway](./104-api-gateway/)

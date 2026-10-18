@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: order-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21040
+        connect-timeout: 1s
+        read-timeout: 2s
+server:
+  address: 127.0.0.1
+  port: 21041
+logging:
+  level:
+    root: warn
+    com.shop: info

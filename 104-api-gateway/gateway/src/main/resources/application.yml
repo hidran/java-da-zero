@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: gateway
+  main:
+    banner-mode: off
+server:
+  address: 127.0.0.1
+  port: 21043
+shop:
+  catalog-url: http://127.0.0.1:21040
+  orders-url: http://127.0.0.1:21041
+logging:
+  level:
+    root: warn
+    com.shop: info

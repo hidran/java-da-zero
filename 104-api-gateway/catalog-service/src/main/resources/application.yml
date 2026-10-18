@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: catalog-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+server:
+  address: 127.0.0.1
+  port: 21040
+logging:
+  level:
+    root: warn
+    com.shop: info

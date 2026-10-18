@@ -1,0 +1,3 @@
+### Product through the gateway
+GET http://127.0.0.1:21043/api/products/1
+Accept: application/json
