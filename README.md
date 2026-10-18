@@ -142,3 +142,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 94: Dockerfile multi stage per Spring Boot](./94-dockerfile-multi-stage/)
 
 - [Lezione 95: Immagini con i buildpacks e i layer](./95-buildpacks-e-layer/)
+
+- [Lezione 96: Immagini sicure](./96-immagini-sicure/)
