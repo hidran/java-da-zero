@@ -182,3 +182,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 108: Tracing distribuito end to end](./108-tracing-distribuito/)
 
 - [Lezione 1c: Java e IntelliJ IDEA su Windows](./01c-installare-su-windows/)
+
+- [Lezione 8b: debug con IntelliJ](./08b-debug-con-intellij/)
