@@ -144,3 +144,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 95: Immagini con i buildpacks e i layer](./95-buildpacks-e-layer/)
 
 - [Lezione 96: Immagini sicure](./96-immagini-sicure/)
+
+- [Lezione 97: Docker Compose, lo stack completo](./97-docker-compose-stack/)
