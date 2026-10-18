@@ -1,0 +1,7 @@
+### Create a product as carol (demo user stored only in the database, password carol-demo)
+POST http://127.0.0.1:18110/api/products
+Accept: application/json
+Content-Type: application/json
+Authorization: Basic Y2Fyb2w6Y2Fyb2wtZGVtbw==
+
+{"name":"Webcam","priceInCents":5900}
