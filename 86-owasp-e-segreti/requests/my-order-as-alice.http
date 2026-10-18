@@ -1,0 +1,4 @@
+### Read order 1 as alice (her own order; demo user, password alice-demo)
+GET http://127.0.0.1:18116/api/orders/1
+Accept: application/json
+Authorization: Basic YWxpY2U6YWxpY2UtZGVtbw==

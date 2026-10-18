@@ -1,0 +1,4 @@
+### Read order 2 as alice (the order belongs to bob)
+GET http://127.0.0.1:18116/api/orders/2
+Accept: application/json
+Authorization: Basic YWxpY2U6YWxpY2UtZGVtbw==

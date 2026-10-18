@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 18116
+shop:
+  payment:
+    api-key: ${SHOP_PAYMENT_API_KEY:}
