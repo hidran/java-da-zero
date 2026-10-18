@@ -1,0 +1,4 @@
+### Delete a product with the saved Keycloak token
+DELETE http://127.0.0.1:20820/api/products/2
+Accept: application/json
+Authorization: Bearer {{token}}

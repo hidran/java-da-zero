@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: shop
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:20821/realms/shop
+server:
+  address: 127.0.0.1
+  port: 20820

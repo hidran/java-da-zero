@@ -1,0 +1,75 @@
+{
+  "realm": "shop",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "USER",
+        "description": "Shop customer"
+      },
+      {
+        "name": "ADMIN",
+        "description": "Shop administrator"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "shop-cli",
+      "name": "Shop demo client",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "http://127.0.0.1:20820/*"
+      ],
+      "webOrigins": [
+        "http://127.0.0.1:20820"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "alice",
+      "enabled": true,
+      "firstName": "Alice",
+      "lastName": "Demo",
+      "email": "alice@shop.example",
+      "emailVerified": true,
+      "realmRoles": [
+        "USER"
+      ],
+      "credentials": [
+        {
+          "type": "password",
+          "temporary": false,
+          "secretData": "{\"value\":\"ygjRESHb8vuiRD2gqWZ0g+fkTBQ9rz+PzYgilgkfjWStJVZQ3/aia4PSGSBqjqvSwzrK3CSENuRHgcwumlWk1g==\",\"salt\":\"BtAKQvZWdgpwmp6l42Kw3g==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":210000,\"algorithm\":\"pbkdf2-sha512\",\"additionalParameters\":{}}"
+        }
+      ]
+    },
+    {
+      "username": "bob",
+      "enabled": true,
+      "firstName": "Bob",
+      "lastName": "Demo",
+      "email": "bob@shop.example",
+      "emailVerified": true,
+      "realmRoles": [
+        "ADMIN"
+      ],
+      "credentials": [
+        {
+          "type": "password",
+          "temporary": false,
+          "secretData": "{\"value\":\"vt25M0MWLQuM55l8edEvE8qN8Gp+SquHAZ9+hnUDu9jHWWGmIGnwV/iXy+skCQbN2coPGcVAjY/BqvC/EebLgw==\",\"salt\":\"TM15aKwABZqUaVpn1qNamQ==\",\"additionalParameters\":{}}",
+          "credentialData": "{\"hashIterations\":210000,\"algorithm\":\"pbkdf2-sha512\",\"additionalParameters\":{}}"
+        }
+      ]
+    }
+  ]
+}

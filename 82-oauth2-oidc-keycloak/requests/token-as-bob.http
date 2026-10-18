@@ -1,0 +1,6 @@
+### Ask Keycloak for a token for bob (demo user, password bob-demo; password grant used only for the recording)
+POST http://127.0.0.1:20821/realms/shop/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=shop-cli&username=bob&password=bob-demo&scope=openid

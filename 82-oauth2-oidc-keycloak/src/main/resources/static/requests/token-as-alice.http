@@ -1,0 +1,6 @@
+### Ask Keycloak for a token for alice (demo user, password alice-demo; password grant used only for the recording)
+POST http://127.0.0.1:20821/realms/shop/protocol/openid-connect/token
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=shop-cli&username=alice&password=alice-demo&scope=openid

@@ -126,3 +126,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 86: Sicurezza delle API, OWASP e segreti](./86-owasp-e-segreti/)
 
 - [Lezione 81: API stateless con JWT](./81-api-stateless-con-jwt/)
+
+- [Lezione 82: OAuth2 e OpenID Connect con Keycloak](./82-oauth2-oidc-keycloak/)
