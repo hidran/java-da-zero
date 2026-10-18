@@ -1,0 +1,5 @@
+### Token for alice (demo user, demo password; real clients use the authorization code flow)
+POST http://127.0.0.1:21063/realms/shop/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=password&client_id=shop-web&username=alice&password=alice-demo&scope=catalog.read+orders.write

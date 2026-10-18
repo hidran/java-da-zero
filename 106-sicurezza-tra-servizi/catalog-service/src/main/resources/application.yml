@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: catalog-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:21069/realms/shop
+server:
+  address: 127.0.0.1
+  port: 21060
+logging:
+  level:
+    root: warn
+    com.shop: info

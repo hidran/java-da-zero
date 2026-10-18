@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: order-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21060
+        connect-timeout: 1s
+        read-timeout: 2s
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:21069/realms/shop
+      client:
+        registration:
+          catalog-client:
+            provider: keycloak
+            client-id: order-service
+            client-secret: ${ORDER_SERVICE_SECRET}
+            authorization-grant-type: client_credentials
+            scope: catalog.read
+        provider:
+          keycloak:
+            token-uri: http://127.0.0.1:21069/realms/shop/protocol/openid-connect/token
+server:
+  address: 127.0.0.1
+  port: 21061
+logging:
+  level:
+    root: warn
+    com.shop: info

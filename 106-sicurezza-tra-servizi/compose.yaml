@@ -1,0 +1,17 @@
+# Keycloak for the take only (the tests use mock JWTs). Spike: confirm image, import and health check on the studio Mac.
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.5
+    command: ["start-dev", "--import-realm", "--health-enabled=true"]
+    environment:
+      KC_HOSTNAME: http://127.0.0.1:21069
+      ORDER_SERVICE_SECRET: ${ORDER_SERVICE_SECRET:?export ORDER_SERVICE_SECRET first}
+    volumes:
+      - ./keycloak/shop-realm.json:/opt/keycloak/data/import/shop-realm.json:ro
+    ports:
+      - "127.0.0.1:21069:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/9000 && printf 'GET /health/ready HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q UP <&3"]
+      interval: 5s
+      timeout: 5s
+      retries: 40

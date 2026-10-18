@@ -162,3 +162,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 104: API Gateway con Spring Cloud Gateway](./104-api-gateway/)
 
 - [Lezione 105: Configurazione centralizzata e service discovery](./105-configurazione-centralizzata-e-discovery/)
+
+- [Lezione 106: Sicurezza tra servizi](./106-sicurezza-tra-servizi/)

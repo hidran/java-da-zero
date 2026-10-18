@@ -1,0 +1,7 @@
+### Order with the token of alice
+POST http://127.0.0.1:21063/api/orders
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{"productId":1,"quantity":2}

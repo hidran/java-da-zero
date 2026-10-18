@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway
+  main:
+    banner-mode: off
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:21069/realms/shop
+server:
+  address: 127.0.0.1
+  port: 21063
+shop:
+  catalog-url: http://127.0.0.1:21060
+  orders-url: http://127.0.0.1:21061
+  keycloak-url: http://127.0.0.1:21069
+logging:
+  level:
+    root: warn
+    com.shop: info
