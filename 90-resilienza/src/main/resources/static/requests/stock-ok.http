@@ -1,0 +1,3 @@
+### Stock from a healthy supplier
+GET http://127.0.0.1:18120/api/products/1/stock
+Accept: application/json

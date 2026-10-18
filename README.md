@@ -130,3 +130,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 82: OAuth2 e OpenID Connect con Keycloak](./82-oauth2-oidc-keycloak/)
 
 - [Lezione 88: Tracing e log correlati](./88-tracing-e-log-correlati/)
+
+- [Lezione 90: Resilienza: timeout, retry, circuit breaker](./90-resilienza/)

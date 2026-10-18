@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop
+  http:
+    clients:
+      connect-timeout: 500ms
+      read-timeout: 1s
+server:
+  address: 127.0.0.1
+  port: 18120
+shop:
+  supplier:
+    base-url: http://127.0.0.1:${server.port}/supplier
