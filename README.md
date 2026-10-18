@@ -120,3 +120,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 83: Ruoli e method security](./83-ruoli-e-method-security/)
 
 - [Lezione 84: CORS, CSRF e header di sicurezza](./84-cors-csrf-e-header/)
+
+- [Lezione 85: Testare la sicurezza](./85-test-della-sicurezza/)
