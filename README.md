@@ -172,3 +172,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 103: Il pattern outbox](./103-pattern-outbox/)
 
 - [Lezione 107: Coerenza distribuita con le saghe](./107-saga/)
+
+- [Lezione 109: Pipeline CI con GitHub Actions](./109-pipeline-ci-github-actions/)
