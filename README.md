@@ -164,3 +164,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 105: Configurazione centralizzata e service discovery](./105-configurazione-centralizzata-e-discovery/)
 
 - [Lezione 106: Sicurezza tra servizi](./106-sicurezza-tra-servizi/)
+
+- [Lezione 93b: Docker su Windows e Linux](./93b-docker-su-windows-e-linux/)
