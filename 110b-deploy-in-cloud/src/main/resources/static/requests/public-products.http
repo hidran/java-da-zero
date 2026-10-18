@@ -1,0 +1,4 @@
+### List products on the public Cloud Run service
+# {{host}} is the address of the page, shown in the address bar
+GET {{host}}/api/products
+Accept: application/json

@@ -184,3 +184,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 1c: Java e IntelliJ IDEA su Windows](./01c-installare-su-windows/)
 
 - [Lezione 8b: debug con IntelliJ](./08b-debug-con-intellij/)
+- [Lezione 110b: Deploy in cloud (facoltativa)](./110b-deploy-in-cloud/)

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop HTTP Client</title>
+<style>
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #111827; color: #e5edf8; }
+  body { margin: 0; padding: 34px 44px; }
+  header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  h1 { font-size: 36px; margin: 0; } h2 { font-size: 25px; margin: 0 0 16px; }
+  #filename { color: #a6bbd8; font: 23px ui-monospace, monospace; }
+  main { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  section { background: #192338; border: 1px solid #34435b; border-radius: 12px; padding: 26px; min-width: 0; }
+  textarea, pre { font: 25px/1.6 ui-monospace, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+  textarea { width: 100%; height: 430px; box-sizing: border-box; resize: vertical; padding: 18px; background: #0c1424; color: #f1f5fb; border: 1px solid #43546c; border-radius: 6px; }
+  button { font: 600 25px system-ui, sans-serif; background: #2563eb; color: white; padding: 13px 26px; border: 0; border-radius: 7px; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: wait; }
+  #status { font-size: 31px; font-weight: 700; padding: 12px 0; color: #8ed5ba; }
+  #state { font-size: 22px; color: #b6c7dc; margin-left: 20px; }
+  h3 { font-size: 22px; color: #b6c7dc; margin-bottom: 8px; }
+  pre { margin: 0; } #headers { font-size: 22px; line-height: 1.4; }
+  #body { margin-top: 8px; color: #f2db9c; }
+</style>
+<header><h1>Shop HTTP Client</h1><span id="filename"></span></header>
+<main>
+  <section>
+    <h2>Request</h2>
+    <textarea id="request" aria-label="HTTP request" spellcheck="false"></textarea>
+    <p><button id="send" disabled>Send request</button><span id="state">Loading request</span></p>
+  </section>
+  <section aria-live="polite">
+    <h2>Response</h2>
+    <div id="status">No response yet</div>
+    <h3>Headers</h3><pre id="headers"></pre>
+    <h3>Body</h3><pre id="body"></pre>
+  </section>
+</main>
+<script>
+  const requestInput = document.querySelector('#request');
+  const sendButton = document.querySelector('#send');
+  const state = document.querySelector('#state');
+  const status = document.querySelector('#status');
+  const headersOutput = document.querySelector('#headers');
+  const bodyOutput = document.querySelector('#body');
+
+  function parseRequest(text) {
+    // {{host}} is the address of this page: the same request works locally and on Cloud Run
+    const lines = text.replace(/\r\n/g, '\n').replaceAll('{{host}}', location.origin).split('\n');
+    while (lines.length && (!lines[0].trim() || lines[0].startsWith('#'))) lines.shift();
+    const match = (lines.shift() || '').match(/^(GET|POST|PUT|PATCH|DELETE|HEAD|OPTIONS)\s+(\S+)$/);
+    if (!match) throw new Error('Enter a method and URL on the first request line.');
+    const url = new URL(match[2], location.origin);
+    if (url.origin !== location.origin) throw new Error('Use the Shop server shown in the address bar.');
+    const headers = new Headers();
+    while (lines.length && lines[0].trim()) {
+      const line = lines.shift();
+      const colon = line.indexOf(':');
+      if (colon < 1) throw new Error('Each header needs a name and a colon.');
+      headers.append(line.slice(0, colon).trim(), line.slice(colon + 1).trim());
+    }
+    if (lines[0] === '') lines.shift();
+    const body = lines.join('\n').trim();
+    return {url, options: {method: match[1], headers, cache: 'no-store', redirect: 'manual',
+      ...(body && !['GET', 'HEAD'].includes(match[1]) ? {body} : {})}};
+  }
+
+  async function sendRequest() {
+    if (sendButton.disabled) return;
+    sendButton.disabled = true;
+    state.textContent = 'Sending request';
+    status.textContent = 'Waiting for response';
+    headersOutput.textContent = '';
+    bodyOutput.textContent = '';
+    try {
+      const request = parseRequest(requestInput.value);
+      const response = await fetch(request.url, request.options);
+      const text = await response.text();
+      status.textContent = `Status: ${response.status} ${response.statusText}`;
+      headersOutput.textContent = [...response.headers].map(([key, value]) => `${key}: ${value}`).join('\n');
+      let displayed = text;
+      if (text && response.headers.get('content-type')?.includes('json')) {
+        try { displayed = JSON.stringify(JSON.parse(text), null, 2); } catch { /* Show the original text. */ }
+      }
+      bodyOutput.textContent = displayed || '(empty body)';
+      state.textContent = 'Response received';
+    } catch (error) {
+      status.textContent = 'Request failed';
+      bodyOutput.textContent = error.message;
+      state.textContent = 'Check the request and server';
+    } finally {
+      sendButton.disabled = false;
+    }
+  }
+
+  sendButton.addEventListener('click', sendRequest);
+  document.addEventListener('keydown', event => {
+    if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') {
+      event.preventDefault();
+      sendRequest();
+    }
+  });
+
+  async function loadRequest() {
+    const filename = new URLSearchParams(location.search).get('request');
+    if (!filename || !/^[a-z0-9-]+\.http$/.test(filename)) {
+      state.textContent = 'Choose a request file in the page URL';
+      return;
+    }
+    document.querySelector('#filename').textContent = filename;
+    try {
+      const response = await fetch(`./requests/${filename}`, {cache: 'no-store'});
+      if (!response.ok) throw new Error('Request file not found');
+      requestInput.value = await response.text();
+      sendButton.disabled = false;
+      state.textContent = 'Ready to send';
+    } catch (error) {
+      state.textContent = error.message;
+    }
+  }
+  loadRequest();
+</script>
+</html>

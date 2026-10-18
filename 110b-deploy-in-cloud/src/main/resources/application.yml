@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: shop
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+server:
+  address: 127.0.0.1
+  port: 18150
