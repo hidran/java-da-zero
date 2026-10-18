@@ -134,3 +134,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 90: Resilienza: timeout, retry, circuit breaker](./90-resilienza/)
 
 - [Lezione 91: Job schedulati e task asincroni](./91-job-schedulati-e-async/)
+
+- [Lezione 92: Qualità del codice nel build](./92-qualita-del-codice/)
