@@ -154,3 +154,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 93: Container e Docker, concetti e motore su macOS](./93-container-e-docker/)
 
 - [Lezione 99: Monolite modulare o microservizi](./99-monolite-modulare-o-microservizi/)
+
+- [Lezione 100: Dividere Shop: i bounded context](./100-bounded-context/)
