@@ -150,3 +150,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 98: Healthcheck, configurazione e segreti](./98-healthcheck-config-e-segreti/)
 
 - [Lezione 89: Caching con Spring Cache e Caffeine](./89-caching/)
+
+- [Lezione 93: Container e Docker, concetti e motore su macOS](./93-container-e-docker/)
