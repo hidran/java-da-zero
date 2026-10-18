@@ -1,0 +1,4 @@
+### Delete a product with the saved token
+DELETE http://127.0.0.1:18111/api/products/2
+Accept: application/json
+Authorization: Bearer {{token}}

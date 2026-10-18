@@ -1,0 +1,4 @@
+### Ask a token for alice (demo user, password alice-demo)
+POST http://127.0.0.1:18111/api/token
+Accept: application/json
+Authorization: Basic YWxpY2U6YWxpY2UtZGVtbw==

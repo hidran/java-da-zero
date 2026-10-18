@@ -124,3 +124,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 85: Testare la sicurezza](./85-test-della-sicurezza/)
 
 - [Lezione 86: Sicurezza delle API, OWASP e segreti](./86-owasp-e-segreti/)
+
+- [Lezione 81: API stateless con JWT](./81-api-stateless-con-jwt/)

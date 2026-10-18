@@ -1,0 +1,7 @@
+### Create a product with the saved token
+POST http://127.0.0.1:18111/api/products
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{"name":"Webcam","priceInCents":5900}
