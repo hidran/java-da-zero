@@ -187,3 +187,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 110b: Deploy in cloud (facoltativa)](./110b-deploy-in-cloud/)
 - [Lezione 24b: cartelle e percorsi](./24b-cartelle-e-percorsi/)
 - [Lezione 24d: byte, stream e archivi ZIP](./24d-byte-stream-e-zip/)
+- [Lezione 24c: copiare, spostare, cancellare](./24c-copiare-spostare-cancellare/)
