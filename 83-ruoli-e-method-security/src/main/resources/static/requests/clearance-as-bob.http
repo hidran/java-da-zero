@@ -1,0 +1,4 @@
+### Remove product 2 through the clearance endpoint as bob (role ADMIN)
+POST http://127.0.0.1:18113/api/clearance/2
+Accept: application/json
+Authorization: Basic Ym9iOmJvYi1kZW1v

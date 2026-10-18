@@ -116,3 +116,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 79: SecurityFilterChain e password come hash](./79-securityfilterchain-e-password/)
 
 - [Lezione 80: Utenti su database con UserDetailsService](./80-utenti-su-database/)
+
+- [Lezione 83: Ruoli e method security](./83-ruoli-e-method-security/)
