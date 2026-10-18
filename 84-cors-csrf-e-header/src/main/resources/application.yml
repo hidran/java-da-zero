@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: shop
+server:
+  address: 127.0.0.1
+  port: 20840
+shop:
+  frontend-origin: http://127.0.0.1:20841

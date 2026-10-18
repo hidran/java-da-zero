@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop Frontend</title>
+<style>
+  :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #111827; color: #e5edf8; }
+  body { margin: 0; padding: 48px 64px; font-size: 30px; }
+  h1 { font-size: 46px; margin: 0 0 12px; }
+  #origin { color: #a6bbd8; font: 26px ui-monospace, monospace; }
+  #result { font-size: 36px; font-weight: 700; margin: 36px 0 18px; }
+  .ok { color: #8ed5ba; } .error { color: #f4a3a3; }
+  li { font: 30px/1.7 ui-monospace, monospace; }
+</style>
+<h1>Shop Frontend</h1>
+<p id="origin"></p>
+<p id="result">Loading products</p>
+<ul id="products"></ul>
+<script>
+  // Demo frontend of lesson 84: a page served from another origin that reads the Shop API with fetch
+  const api = 'http://127.0.0.1:20840/api/products';
+  const result = document.querySelector('#result');
+  document.querySelector('#origin').textContent = `Page origin: ${location.origin}, API: ${new URL(api).origin}`;
+  fetch(api, {cache: 'no-store'})
+    .then(response => response.json())
+    .then(products => {
+      result.textContent = `Products loaded: ${products.length}`;
+      result.className = 'ok';
+      for (const product of products) {
+        const item = document.createElement('li');
+        item.textContent = `${product.name}: ${product.priceInCents} cents`;
+        document.querySelector('#products').append(item);
+      }
+    })
+    .catch(() => {
+      result.textContent = 'Request failed: the browser did not let this page read the API response';
+      result.className = 'error';
+    });
+</script>
+</html>
