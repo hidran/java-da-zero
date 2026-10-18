@@ -180,3 +180,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 111: Revisione finale e checklist](./111-revisione-finale-e-checklist/)
 
 - [Lezione 108: Tracing distribuito end to end](./108-tracing-distribuito/)
+
+- [Lezione 1c: Java e IntelliJ IDEA su Windows](./01c-installare-su-windows/)
