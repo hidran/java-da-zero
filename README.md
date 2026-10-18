@@ -170,3 +170,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 102: Messaggi asincroni con Kafka](./102-messaggi-con-kafka/)
 
 - [Lezione 103: Il pattern outbox](./103-pattern-outbox/)
+
+- [Lezione 107: Coerenza distribuita con le saghe](./107-saga/)

@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: order-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21070
+        connect-timeout: 1s
+        read-timeout: 2s
+  kafka:
+    bootstrap-servers: 127.0.0.1:21079
+    consumer:
+      group-id: order-service
+      auto-offset-reset: earliest
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+server:
+  address: 127.0.0.1
+  port: 21071
+logging:
+  level:
+    root: warn
+    com.shop: info
+    org.apache.kafka: error

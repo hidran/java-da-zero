@@ -1,0 +1,3 @@
+### Monitor stock after the compensation
+GET http://127.0.0.1:21070/api/products/3
+Accept: application/json

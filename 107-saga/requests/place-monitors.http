@@ -1,0 +1,6 @@
+### Order 2: two monitors, above the demo card limit
+POST http://127.0.0.1:21071/api/orders
+Accept: application/json
+Content-Type: application/json
+
+{"productId":3,"quantity":2}
