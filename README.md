@@ -152,3 +152,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 89: Caching con Spring Cache e Caffeine](./89-caching/)
 
 - [Lezione 93: Container e Docker, concetti e motore su macOS](./93-container-e-docker/)
+
+- [Lezione 99: Monolite modulare o microservizi](./99-monolite-modulare-o-microservizi/)
