@@ -178,3 +178,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 110: Immagine nativa con GraalVM (facoltativa)](./110-native-image-graalvm/)
 
 - [Lezione 111: Revisione finale e checklist](./111-revisione-finale-e-checklist/)
+
+- [Lezione 108: Tracing distribuito end to end](./108-tracing-distribuito/)

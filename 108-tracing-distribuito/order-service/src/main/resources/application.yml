@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: order-service
+  main:
+    banner-mode: off
+  mvc:
+    problemdetails:
+      enabled: true
+  http:
+    serviceclient:
+      catalog:
+        base-url: http://127.0.0.1:21080
+        connect-timeout: 1s
+        read-timeout: 2s
+  kafka:
+    bootstrap-servers: 127.0.0.1:21087
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+    template:
+      observation-enabled: true
+server:
+  address: 127.0.0.1
+  port: 21081
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  opentelemetry:
+    tracing:
+      export:
+        otlp:
+          endpoint: http://127.0.0.1:21088/v1/traces
+  otlp:
+    metrics:
+      export:
+        enabled: false
+logging:
+  level:
+    root: warn
+    com.shop: info
+    org.apache.kafka: error

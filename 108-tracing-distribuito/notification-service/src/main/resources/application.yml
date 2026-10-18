@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: notification-service
+  main:
+    banner-mode: off
+  kafka:
+    bootstrap-servers: 127.0.0.1:21087
+    consumer:
+      group-id: notification-service
+      auto-offset-reset: earliest
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      observation-enabled: true
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+  opentelemetry:
+    tracing:
+      export:
+        otlp:
+          endpoint: http://127.0.0.1:21088/v1/traces
+  otlp:
+    metrics:
+      export:
+        enabled: false
+logging:
+  level:
+    root: warn
+    com.shop: info
+    org.apache.kafka: error
