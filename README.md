@@ -166,3 +166,5 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 106: Sicurezza tra servizi](./106-sicurezza-tra-servizi/)
 
 - [Lezione 93b: Docker su Windows e Linux](./93b-docker-su-windows-e-linux/)
+
+- [Lezione 102: Messaggi asincroni con Kafka](./102-messaggi-con-kafka/)
