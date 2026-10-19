@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: shop
+  servlet:
+    multipart:
+      max-file-size: 512KB
+      max-request-size: 1MB
+server:
+  address: 127.0.0.1
+  port: 18193
+shop:
+  images:
+    dir: ${SHOP_IMAGES_DIR:data/images}

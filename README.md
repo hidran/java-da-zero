@@ -188,3 +188,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 24b: cartelle e percorsi](./24b-cartelle-e-percorsi/)
 - [Lezione 24d: byte, stream e archivi ZIP](./24d-byte-stream-e-zip/)
 - [Lezione 24c: copiare, spostare, cancellare](./24c-copiare-spostare-cancellare/)
+- [Lezione 63b: Upload e download di file con Spring MVC](./63b-upload-e-download-di-file/)

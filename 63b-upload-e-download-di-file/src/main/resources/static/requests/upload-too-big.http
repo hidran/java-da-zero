@@ -1,0 +1,10 @@
+### An image over the size limit
+POST http://127.0.0.1:18193/api/products/1/image
+Content-Type: multipart/form-data; boundary=ShopBoundary
+
+--ShopBoundary
+Content-Disposition: form-data; name="file"; filename="big-photo.png"
+Content-Type: image/png
+
+< ./big-photo.png
+--ShopBoundary--

@@ -1,0 +1,10 @@
+### Upload the keyboard image
+POST http://127.0.0.1:18193/api/products/1/image
+Content-Type: multipart/form-data; boundary=ShopBoundary
+
+--ShopBoundary
+Content-Disposition: form-data; name="file"; filename="keyboard.png"
+Content-Type: image/png
+
+< ./keyboard.png
+--ShopBoundary--
