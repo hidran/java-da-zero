@@ -190,3 +190,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 24c: copiare, spostare, cancellare](./24c-copiare-spostare-cancellare/)
 - [Lezione 63b: Upload e download di file con Spring MVC](./63b-upload-e-download-di-file/)
 - [Lezione 24e: sorvegliare una cartella](./24e-sorvegliare-una-cartella/)
+- [Lezione 2b: anatomia di un programma](./02b-anatomia-di-un-programma/)
