@@ -199,3 +199,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 61b: Testare un client HTTP](./61b-testare-client-http/)
 - [Lezione 62b: Test end to end dell'API](./62b-test-end-to-end-api/)
 - [Lezione 92b: Test che mentono](./92b-test-che-mentono/)
+- [Lezione 22b: soldi senza sorprese con BigDecimal](./22b-soldi-con-bigdecimal/)
