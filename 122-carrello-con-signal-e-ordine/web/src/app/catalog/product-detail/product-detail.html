@@ -1,0 +1,36 @@
+<a routerLink="/" class="text-sm text-indigo-700 hover:underline">
+  Back to the catalog
+</a>
+@if (product.hasValue()) {
+  <article class="mt-6 max-w-2xl rounded-lg border border-slate-200 bg-white p-6">
+    <p class="text-xs font-semibold tracking-wide text-indigo-700 uppercase">
+      {{ product.value().categoryName }}
+    </p>
+    <h1 class="mt-1 text-3xl font-semibold">{{ product.value().name }}</h1>
+    <p class="mt-4 text-slate-700">{{ product.value().description }}</p>
+    <p class="mt-6 text-2xl font-bold">
+      {{ product.value().priceInCents / 100 | currency: 'EUR' }}
+    </p>
+    <div class="mt-6 flex flex-wrap items-center gap-4">
+      <button
+        type="button"
+        class="rounded-md bg-indigo-600 px-4 py-2
+          font-medium text-white hover:bg-indigo-700"
+        (click)="addToCart(product.value())"
+      >
+        Add to cart
+      </button>
+      @if (added()) {
+        <p class="text-sm text-green-800" role="status">
+          Added. <a routerLink="/cart" class="underline">Go to the cart</a>
+        </p>
+      }
+    </div>
+  </article>
+} @else if (product.error()) {
+  <p class="mt-6 rounded-md bg-red-50 p-4 text-red-800" role="alert">
+    {{ errorMessage() }}
+  </p>
+} @else {
+  <p class="mt-6 text-slate-600">Loading the product...</p>
+}
