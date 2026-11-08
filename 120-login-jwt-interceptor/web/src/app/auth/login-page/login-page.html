@@ -1,0 +1,31 @@
+<h1 class="text-2xl font-semibold">Log in</h1>
+<form [formRoot]="loginForm" class="mt-6 flex max-w-sm flex-col gap-4">
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Username</span>
+    <input class="field" autocomplete="username" [formField]="loginForm.username" />
+    <app-field-error [state]="loginForm.username()" />
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Password</span>
+    <input
+      class="field"
+      type="password"
+      autocomplete="current-password"
+      [formField]="loginForm.password"
+    />
+    <app-field-error [state]="loginForm.password()" />
+  </label>
+  @for (error of loginForm().errors(); track $index) {
+    <p class="rounded-md bg-red-50 p-3 text-sm text-red-800" role="alert">
+      {{ error.message }}
+    </p>
+  }
+  <button
+    type="submit"
+    class="rounded-md bg-indigo-600 px-4 py-2 font-medium text-white
+      hover:bg-indigo-700 disabled:opacity-50"
+    [disabled]="loginForm().submitting()"
+  >
+    Log in
+  </button>
+</form>
