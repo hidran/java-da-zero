@@ -209,3 +209,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 116: Componenti, template e signal](./116-componenti-template-signal/)
 - [Lezione 117: Un catalogo responsive con Tailwind](./117-catalogo-responsive-tailwind/)
 - [Lezione 118: Chiamare l'API](./118-chiamare-api-httpclient/)
+- [Lezione 119: Routing e lazy loading](./119-routing-e-lazy-loading/)
