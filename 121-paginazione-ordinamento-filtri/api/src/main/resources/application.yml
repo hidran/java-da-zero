@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: shop
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:21212/shop
+    username: shop
+    # Demo default for local development only: set DB_PASSWORD to override it.
+    password: ${DB_PASSWORD:shop-demo-password}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+springdoc:
+  default-produces-media-type: application/json
+server:
+  address: 127.0.0.1
+  port: 21210
+shop:
+  frontend-origin: http://127.0.0.1:21211

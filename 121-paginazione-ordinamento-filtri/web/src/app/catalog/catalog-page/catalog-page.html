@@ -1,0 +1,94 @@
+<h1 class="text-2xl font-semibold">Catalog</h1>
+@if (lastAdded()) {
+  <p class="mt-4 text-sm text-green-800" role="status">
+    {{ lastAdded() }} added to the cart
+  </p>
+}
+<div class="mt-6 grid gap-4 sm:grid-cols-3">
+  <label class="flex flex-col gap-1">
+    <span class="text-sm font-medium">Search</span>
+    <input
+      #searchBox
+      type="search"
+      class="field"
+      placeholder="Search products"
+      [value]="name() ?? ''"
+      (input)="search(searchBox.value)"
+    />
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="text-sm font-medium">Category</span>
+    <select
+      #categorySelect
+      class="field"
+      (change)="chooseCategory(categorySelect.value)"
+    >
+      <option value="">All categories</option>
+      @if (categories.hasValue()) {
+        @for (category of categories.value(); track category.id) {
+          <option
+            [value]="category.id"
+            [selected]="category.id === currentCategoryId()"
+          >
+            {{ category.name }}
+          </option>
+        }
+      }
+    </select>
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="text-sm font-medium">Sort by</span>
+    <select #sortSelect class="field" (change)="chooseSort(sortSelect.value)">
+      @for (option of sorts; track option.value) {
+        <option [value]="option.value" [selected]="option.value === currentSort()">
+          {{ option.label }}
+        </option>
+      }
+    </select>
+  </label>
+</div>
+@if (products.hasValue()) {
+  <ul
+    class="mt-8 grid grid-cols-1 gap-6
+      sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+  >
+    @for (product of products.value().content; track product.id) {
+      <li>
+        <app-product-card [product]="product" (addToCart)="add($event)" />
+      </li>
+    } @empty {
+      <li class="col-span-full text-slate-600">No product matches the search.</li>
+    }
+  </ul>
+  @if (products.value().totalPages > 1) {
+    <nav class="mt-8 flex items-center justify-between" aria-label="Pages">
+      <button
+        type="button"
+        class="rounded-md border border-slate-300 px-3 py-2
+          text-sm disabled:opacity-40"
+        [disabled]="currentPage() === 0"
+        (click)="goToPage(currentPage() - 1)"
+      >
+        Previous
+      </button>
+      <span class="text-sm text-slate-600">
+        Page {{ currentPage() + 1 }} of {{ products.value().totalPages }}
+      </span>
+      <button
+        type="button"
+        class="rounded-md border border-slate-300 px-3 py-2
+          text-sm disabled:opacity-40"
+        [disabled]="currentPage() + 1 >= products.value().totalPages"
+        (click)="goToPage(currentPage() + 1)"
+      >
+        Next
+      </button>
+    </nav>
+  }
+} @else if (products.error()) {
+  <p class="mt-8 rounded-md bg-red-50 p-4 text-red-800" role="alert">
+    {{ errorMessage() }}
+  </p>
+} @else {
+  <p class="mt-8 text-slate-600">Loading products...</p>
+}

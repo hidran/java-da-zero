@@ -211,3 +211,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 118: Chiamare l'API](./118-chiamare-api-httpclient/)
 - [Lezione 119: Routing e lazy loading](./119-routing-e-lazy-loading/)
 - [Lezione 120: Login con JWT](./120-login-jwt-interceptor/)
+- [Lezione 121: Paginazione, ordinamento e filtri](./121-paginazione-ordinamento-filtri/)
