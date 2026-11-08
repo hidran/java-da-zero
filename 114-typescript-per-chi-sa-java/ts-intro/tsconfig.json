@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2024",
+    "module": "nodenext",
+    "erasableSyntaxOnly": true,
+    "noEmit": true
+  }
+}

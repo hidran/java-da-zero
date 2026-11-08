@@ -204,3 +204,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 28b: Git per lavorare in team](./28b-git-per-lavorare-in-team/)
 - [Lezione 112: Architettura di una SPA e tour dell'API](./112-architettura-spa-e-tour-api/)
 - [Lezione 113: Il backend per il frontend](./113-backend-per-il-frontend/)
+- [Lezione 114: TypeScript per chi sa Java](./114-typescript-per-chi-sa-java/)
