@@ -1,0 +1,16 @@
+<h1 class="text-2xl font-semibold">Catalog</h1>
+@if (lastAdded()) {
+  <p class="mt-4 text-sm text-green-800" role="status">
+    {{ lastAdded() }} added to the cart
+  </p>
+}
+<ul
+  class="mt-8 grid grid-cols-1 gap-6
+    sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+>
+  @for (product of products(); track product.id) {
+    <li>
+      <app-product-card [product]="product" (addToCart)="add($event)" />
+    </li>
+  }
+</ul>
