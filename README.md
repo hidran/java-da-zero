@@ -202,3 +202,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 22b: soldi senza sorprese con BigDecimal](./22b-soldi-con-bigdecimal/)
 - [Lezione 24f: file che arrivano da altri sistemi](./24f-file-da-altri-sistemi/)
 - [Lezione 28b: Git per lavorare in team](./28b-git-per-lavorare-in-team/)
+- [Lezione 112: Architettura di una SPA e tour dell'API](./112-architettura-spa-e-tour-api/)
