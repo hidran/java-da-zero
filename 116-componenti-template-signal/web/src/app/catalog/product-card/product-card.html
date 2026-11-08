@@ -1,0 +1,11 @@
+<article>
+  <p>{{ product().categoryName }}</p>
+  <h2>{{ product().name }}</h2>
+  <p>{{ product().description }}</p>
+  <div>
+    <span>{{ price() | currency: 'EUR' }}</span>
+    <button type="button" (click)="addToCart.emit(product())">
+      Add to cart
+    </button>
+  </div>
+</article>

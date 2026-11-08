@@ -206,3 +206,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 113: Il backend per il frontend](./113-backend-per-il-frontend/)
 - [Lezione 114: TypeScript per chi sa Java](./114-typescript-per-chi-sa-java/)
 - [Lezione 115: Node, ng new e Tailwind](./115-node-ng-new-e-tailwind/)
+- [Lezione 116: Componenti, template e signal](./116-componenti-template-signal/)

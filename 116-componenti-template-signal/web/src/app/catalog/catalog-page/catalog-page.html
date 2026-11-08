@@ -1,0 +1,11 @@
+<h1>Catalog</h1>
+@if (lastAdded()) {
+  <p role="status">{{ lastAdded() }} added to the cart</p>
+}
+<ul>
+  @for (product of products(); track product.id) {
+    <li>
+      <app-product-card [product]="product" (addToCart)="add($event)" />
+    </li>
+  }
+</ul>
