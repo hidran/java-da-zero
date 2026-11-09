@@ -214,3 +214,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 121: Paginazione, ordinamento e filtri](./121-paginazione-ordinamento-filtri/)
 - [Lezione 122: Un carrello con signal e l'ordine](./122-carrello-con-signal-e-ordine/)
 - [Lezione 123: Form admin e validazione](./123-form-admin-e-validazione/)
+- [Lezione 124: Test e build di produzione](./124-test-vitest-e-build-nginx/)
