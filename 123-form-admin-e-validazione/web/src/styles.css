@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+/* The one reusable class of the project:
+   every text field, select and text area looks the same. */
+@layer components {
+  .field {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2;
+    @apply focus:border-indigo-500 focus:outline-none;
+    @apply focus:ring-2 focus:ring-indigo-200;
+  }
+}

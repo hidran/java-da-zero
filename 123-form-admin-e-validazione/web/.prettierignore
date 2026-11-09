@@ -1,0 +1,3 @@
+# Prettier leaves the templates alone: their long Tailwind class lists
+# stay split into short groups on several lines.
+*.html
