@@ -223,3 +223,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 4b: tutti i tipi primitivi](./04b-tutti-i-tipi-primitivi/)
 - [Lezione 4c: operatori sui bit e valori senza segno](./04c-bit-e-valori-senza-segno/)
 - [Lezione 8f: array a due dimensioni e la classe Arrays](./08f-array-a-due-dimensioni/)
+- [Lezione 4d: la classe Math, calcoli esatti, BigInteger e numeri casuali](./04d-math-e-numeri-grandi/)
