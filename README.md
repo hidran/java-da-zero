@@ -219,3 +219,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 8e: formattare il testo](./08e-formattare-il-testo/)
 - [Lezione 4a: conversioni e cast](./04a-conversioni-e-cast/)
 - [Lezione 5a: l'operatore ternario](./05a-operatore-ternario/)
+- [Lezione 17a: tipi wrapper e autoboxing](./17a-tipi-wrapper-e-autoboxing/)
