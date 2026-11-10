@@ -218,3 +218,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 8a: array e stringhe vuoti](./08a-array-e-stringhe-vuoti/)
 - [Lezione 8e: formattare il testo](./08e-formattare-il-testo/)
 - [Lezione 4a: conversioni e cast](./04a-conversioni-e-cast/)
+- [Lezione 5a: l'operatore ternario](./05a-operatore-ternario/)

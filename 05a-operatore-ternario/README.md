@@ -1,0 +1,7 @@
+# Lezione 5a: l'operatore ternario
+
+Codice mostrato nella lezione. Ogni file si compila ed esegue da solo con il JDK 25:
+
+```bash
+java CartLabel.java
+```
