@@ -231,3 +231,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 20a: ordinare, Comparable e Comparator](./20a-comparable-e-comparator/)
 - [Lezione 22c: espressioni regolari](./22c-espressioni-regolari/)
 - [Lezione 25b: sincronizzazione con synchronized, lock e collezioni concorrenti](./25b-sincronizzazione-e-lock/)
+- [Lezione 27a: annotazioni e reflection](./27a-annotazioni-e-reflection/)
