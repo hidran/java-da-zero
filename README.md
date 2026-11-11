@@ -226,3 +226,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 4d: la classe Math, calcoli esatti, BigInteger e numeri casuali](./04d-math-e-numeri-grandi/)
 - [Lezione 8g: stringhe e caratteri](./08g-stringhe-e-caratteri/)
 - [Lezione 8h: come viaggiano i parametri](./08h-parametri-varargs-ricorsione/)
+- [Lezione 17b: classi annidate, locali e anonime](./17b-classi-locali-e-anonime/)
