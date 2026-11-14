@@ -236,3 +236,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lesson 28d: the first Maven project (archetype, build and wrapper)](./28d-primo-progetto-maven/)
 - [Lesson 28e: Maven in IntelliJ IDEA](./28e-maven-in-intellij/)
 - [Lesson 28f: adding dependencies (Maven Central, scopes and versions)](./28f-dipendenze-maven/)
+- [Lesson 28g: Maven plugins, running the program and building an executable jar](./28g-plugin-e-jar-eseguibile/)
