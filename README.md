@@ -234,3 +234,4 @@ Codice sorgente del corso Java enterprise e Spring Boot da zero, una cartella pe
 - [Lezione 27a: annotazioni e reflection](./27a-annotazioni-e-reflection/)
 - [Lesson 28c: Maven, what it is and how to install it](./28c-installare-maven/)
 - [Lesson 28d: the first Maven project (archetype, build and wrapper)](./28d-primo-progetto-maven/)
+- [Lesson 28e: Maven in IntelliJ IDEA](./28e-maven-in-intellij/)
